@@ -241,7 +241,7 @@ public final class NewDriver {
      */
     public static void main(String[] args) {
         if(!EXCEPTIONS_IN_INIT.isEmpty()) {
-            System.err.println("Configuration error during init, see exceptions :"+exceptionsToString(EXCEPTIONS_IN_INIT));
+            System.err.println("Configuration error during init, see  exceptions :"+exceptionsToString(EXCEPTIONS_IN_INIT));
         } else {
             Thread.currentThread().setContextClassLoader(loader);
             if (System.getProperty("log4j.configuration") == null) {// $NON-NLS-1$ $NON-NLS-2$
